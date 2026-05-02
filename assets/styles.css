@@ -1,0 +1,15 @@
+:root { --primary:#0c3b8f; --bg:#f5f7fb; --card:#fff; }
+* { box-sizing:border-box; font-family: Arial, sans-serif; }
+body { margin:0; background:var(--bg); color:#1e293b; }
+.topbar { background:linear-gradient(90deg,#0d2f6a,#1b57c4); color:#fff; padding:1rem 2rem; }
+.topbar nav a { color:#fff; margin-right:1rem; text-decoration:none; }
+.topbar nav a.active { text-decoration:underline; }
+.container { max-width:1000px; margin:1.5rem auto; padding:0 1rem; }
+.two-col { display:grid; grid-template-columns:300px 1fr; gap:1rem; }
+.card { background:var(--card); border-radius:12px; padding:1rem 1.2rem; box-shadow:0 4px 16px rgba(0,0,0,.08); }
+.avatar { width:100%; border-radius:10px; border:2px solid #dbe2f0; }
+.grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:1rem; }
+.item { border:1px solid #dbe2f0; border-radius:10px; padding:.8rem; background:#fcfdff; }
+.muted { color:#64748b; }
+pre { background:#0f172a; color:#e2e8f0; padding:.8rem; border-radius:8px; min-height:80px; }
+@media (max-width: 800px) { .two-col { grid-template-columns:1fr; } }
